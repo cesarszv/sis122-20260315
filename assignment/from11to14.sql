@@ -1,10 +1,28 @@
 -- from11to14
 -- UPDATE
 
--- tarea 11. Cambiar la ciudad del cliente con id 1 a "Cochabamba".
+-- Cambiar la ciudad del cliente con id 1 a "Cochabamba".
+UPDATE Clientes
+SET ciudad = 'Cochabamba'
+WHERE id_cliente = 1
+;
 
--- tarea 12. Aumentar el precio de todos los productos en 10%.
+-- Aumentar el precio de todos los productos en 10%.
+UPDATE Productos
+SET precio = precio * 1.10
+;
 
--- tarea 13. Cambiar el nombre de un producto.
+-- Cambiar el nombre de un producto.
+UPDATE Productos
+SET nombre = 'Agua VillaSanta'
+WHERE id_producto = 2
+;
 
--- tarea 14. Actualizar la cantidad de un producto en un detalle de pedido.
+-- Actualizar la cantidad de un producto en un detalle de pedido.
+UPDATE Detalle_Pedido
+SET cantidad = 3 
+WHERE 
+id_pedido = 1 
+AND 
+id_producto = 3
+;
