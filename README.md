@@ -1,4 +1,4 @@
-# Modelo de Examen
+# Ejercicios SQL Semana 5
 
 - Cesar Sebastian Zambrana Ventura
 

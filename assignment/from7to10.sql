@@ -27,5 +27,6 @@ VALUES
 -- Insertar dos productos en el detalle de ese pedido.
 INSERT INTO Detalle_Pedido (id_detalle, id_pedido, id_producto, cantidad)
 VALUES
-(1, 1, 3, 2)
+(1, 1, 3, 1), -- primer detalle, el pedido 1 compro 1 monster blanco
+(2, 1, 1, 2) -- segundo detalle, el pedido 1 compro 2 chicles beldent
 ;
