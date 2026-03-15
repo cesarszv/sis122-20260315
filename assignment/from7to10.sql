@@ -1,10 +1,31 @@
 -- from7to10
--- INSERT
+-- INSERTS
 
--- tarea 7. Insertar un cliente nuevo llamado "Carlos Perez" de La Paz.
+-- Insertar un cliente nuevo llamado "Carlos Perez" de La Paz.
+INSERT INTO Clientes (id_cliente, nombre, ciudad)
+VALUES
+(1, 'Carlos Perez', 'La Paz')
+;
 
--- tarea 8. Insertar 3 productos nuevos.
 
--- tarea 9. Crear un pedido para el cliente con id 1.
+-- Insertar 3 productos nuevos.
+INSERT INTO Productos (id_producto, nombre, precio)
+VALUES
+(1, 'Chicle Beldent', 6),
+(2, 'Agua Vital', 7),
+(3, 'Monster Blanco', 25)
+;
 
--- tarea 10. Insertar dos productos en el detalle de ese pedido.
+
+-- Crear un pedido para el cliente con id 1.
+INSERT INTO Pedidos (id_pedido, id_cliente, fecha)
+VALUES
+(1, 1, '2026-03-15') -- pedido número 1, hecho por Carlos Pérez el 2026-03-15
+;
+
+
+-- Insertar dos productos en el detalle de ese pedido.
+INSERT INTO Detalle_Pedido (id_detalle, id_pedido, id_producto, cantidad)
+VALUES
+(1, 1, 3, 2)
+;

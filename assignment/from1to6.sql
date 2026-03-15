@@ -1,5 +1,5 @@
 -- from1to6
--- SELECT
+-- SELECTS
 
 -- Mostrar todos los clientes.
 SELECT *
