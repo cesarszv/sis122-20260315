@@ -1,14 +1,37 @@
 -- from1to6
 -- SELECT
 
--- tarea 1. Mostrar todos los clientes.
+-- Mostrar todos los clientes.
+SELECT *
+FROM Clientes
+;
 
--- tarea 2. Mostrar nombre y ciudad de los clientes.
+-- Mostrar nombre y ciudad de los clientes.
+SELECT nombre, ciudad
+FROM Clientes
+;
 
--- tarea 3. Mostrar todos los productos con precio mayor a 50.
+-- Mostrar todos los productos con precio mayor a 50.
+SELECT nombre, precio
+FROM Productos
+WHERE precio > 50
+;
 
--- tarea 4. Mostrar los productos ordenados por precio de mayor a menor.
+-- Mostrar los productos ordenados por precio de mayor a menor.
+SELECT  nombre, precio
+FROM Productos
+ORDER BY precio DESC
+;
 
--- tarea 5. Mostrar los productos cuyo nombre empiece con "T".
+-- Mostrar los productos cuyo nombre empiece con "T".
+SELECT nombre
+FROM Productos
+WHERE nombre LIKE 'T%'
+;
 
--- tarea 6. Mostrar los 5 productos mas baratos.
+-- Mostrar los 5 productos mas baratos.
+SELECT nombre, precio
+FROM Productos
+ORDER BY precio ASC
+LIMIT 5
+;
